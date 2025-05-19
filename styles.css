@@ -17,12 +17,18 @@ body{
 }
 
 .container{
+    margin-top: 14px;
     width: 375px;
     height: 520px;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
 }
 
 .container form{
@@ -48,10 +54,16 @@ body{
     padding-left: 10px;
 }
 
+
+.product-list{
+    padding: 20px 0;
+}
+
 .product{
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin: 15px 0;
 }
 
 .product img{
@@ -60,3 +72,17 @@ body{
     border-radius: 5px;
     object-fit: cover;
 }
+
+.product .text-content{
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1d1d1d;
+}
+
+.product .text-content h2{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
